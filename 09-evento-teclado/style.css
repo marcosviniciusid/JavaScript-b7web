@@ -1,0 +1,9 @@
+body {
+    background-color: gainsboro;
+}
+input {
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid gainsboro;
+    border-radius: 2px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo" onclick="alert('Clicou no titulo ein')">Seja Bem vindo!</h1>
+    <h1 id="titulo" 
+        onmouseover="alert('Passei o rodo ein')"
+        onmouseout="alert('Tirei ein')"> Seja Bem vindo!</h1>
+    
+    <!-- Outro evento é o onmouseout = Ao tirar o mouse do elemento ele executa-->
+    
+    <input id="campo" type="text" name="usuario" value="Nome do usuário">
+
+    <!--<button onclick="clicou()">Clique em mim</button>-->
+    <!--<button onclick="document.getElementById('titulo').innerHTML = 'Executando direto do onclick'">Clique em mim</button>-->
+    <!-- Passando o proprio elemento e alterando-o
+    <button onclick="this.innerHTML='Clicou!'">Clique em mim</button> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

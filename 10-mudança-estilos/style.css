@@ -1,0 +1,25 @@
+body {
+    background-color: gainsboro;
+}
+input {
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid gainsboro;
+    border-radius: 2px;
+}
+.azul {
+    background-color: blue;
+    columns: #fff;
+}
+.vermelho {
+    background-color: red;
+    color: #fff;
+}
+.verde {
+    background-color: green;
+    color: #fff;
+}
+
+#telefone {
+    display: none;
+}
