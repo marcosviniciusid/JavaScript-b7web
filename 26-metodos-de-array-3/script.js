@@ -1,26 +1,45 @@
-let lista = ['ovo', 'Farinha', 'Corante', 'Massa'];
+let lista = [45, 4, 9, 16, 25];
+let lista2 = [];
 
-delete lista[1];
+lista2 = lista.map(function(item) {
+    return item * 2;
+});
 
-lista.splice(1, 1);
-// 1Parametro = Remover a partir do item 1
-// 2Parametro = Quantidade de itens a remover
-// Se deixar só 1, remove tudo.
+for(let i in lista) {
+    lista2.push(lista[i] * 2);
+}
 
-let lista2 = ['Prato', 'Liquidificador', 'Forno'];
+lista2 = lista.filter(function(item){
+    if(item < 20) {
+        return true;
+    } else {
+        return false;
+    }
+});
 
-let res = lista.concat(lista2);
-// Vai juntar as duas listas
+// Nem todo mundo é maior que 20
+lista2 = lista.every(function(item) {
+    if(item > 20) {
+        return true;
+    } else {
+        return false;
+    }
+})
 
-lista.sort();
-// Ordena o texto em ordem alfabetica crescente
+lista2 = lista.every(function(item) {
+    return (item > 3)? true : false;
+})
 
-lista.sort();
-lista.reverse();
-// Primeiro ordena em ordem alfabetica e depois inverte com o reverse
+// some = alguns
+lista2 = lista.some(function(item) {
+    if(item > 20) {
+        return true;
+    } else {
+        return false;
+    }
+})
 
 
-
-let res = lista;
+let res = lista2;
 
 console.log(res);
