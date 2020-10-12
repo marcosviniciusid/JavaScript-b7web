@@ -26,6 +26,7 @@ lista2 = lista.every(function(item) {
     }
 })
 
+// Todos tem q estar de acordo com a condição, se não dá false
 lista2 = lista.every(function(item) {
     return (item > 3)? true : false;
 })

@@ -2,11 +2,12 @@ let lista = [45, 4, 9, 16, 25];
 let lista2 = [];
 
 
-
+// Retorna o primeiro encontrado
 lista2 = lista.find(function(item){
     return (item == 16)? true : false;
 });
 
+// Mesma coisa que o find, porém ele retorna a posição dele no array.
 lista2 = lista.findIndex(function(item){
     return (item == 16)? true : false;
 });
